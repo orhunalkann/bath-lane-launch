@@ -1,1 +1,3 @@
-$file:/workspace/.vercelignore
+.git
+uploads
+data/project.json
