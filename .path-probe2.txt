@@ -1,0 +1,1 @@
+file:///tmp/LOCKFILE_CONTENT_ONLY.txt
