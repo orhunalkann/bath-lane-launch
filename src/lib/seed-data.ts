@@ -15,7 +15,6 @@ function issue(
 }
 
 const issues: Issue[] = [
-  // —— Week 1 Decisions ——
   issue(1, {
     title: "Assign Social vs Technical roles in writing",
     description:
@@ -86,8 +85,6 @@ const issues: Issue[] = [
     labels: ["rhythm"],
     week: 1,
   }),
-
-  // —— Branding ——
   issue(6, {
     title: "One-page brand brief",
     description:
@@ -179,8 +176,6 @@ const issues: Issue[] = [
     labels: ["ai", "photos"],
     week: 12,
   }),
-
-  // —— Sourcing ——
   issue(13, {
     title: "Shortlist 8–10 Alibaba suppliers",
     description:
@@ -290,8 +285,6 @@ const issues: Issue[] = [
     labels: ["qc"],
     week: 13,
   }),
-
-  // —— Legal ——
   issue(21, {
     title: "Form LLC + operating agreement",
     description:
@@ -367,8 +360,6 @@ const issues: Issue[] = [
     labels: ["optional"],
     week: 12,
   }),
-
-  // —— Website ——
   issue(27, {
     title: "Shopify Basic + domain setup",
     description: "Free theme; Shopify Payments + Shop Pay. Budget ~$130 for 3 months + domain.",
@@ -410,7 +401,7 @@ const issues: Issue[] = [
   issue(30, {
     title: "Shipping rates, reviews app, email, pixels, analytics",
     description:
-      "Meta is TikTok pixels, GA, refund/shipping/privacy/terms pages. Ship from home first via Shopify Shipping or Pirate Ship.",
+      "Meta + TikTok pixels, GA, refund/shipping/privacy/terms pages. Ship from home first via Shopify Shipping or Pirate Ship.",
     type: "task",
     status: "backlog",
     priority: "medium",
@@ -432,8 +423,6 @@ const issues: Issue[] = [
     labels: ["fulfillment"],
     week: 13,
   }),
-
-  // —— Marketing ——
   issue(32, {
     title: "Claim handles + post 4–5×/week from early Nov",
     description:
@@ -508,8 +497,6 @@ const issues: Issue[] = [
     labels: ["email"],
     week: 12,
   }),
-
-  // —— Launch ——
   issue(38, {
     title: "Launch Mon Jan 18: waitlist sneak peek + creator brief",
     description: "Email waitlist; send creators their posting brief.",
@@ -560,8 +547,6 @@ const issues: Issue[] = [
     labels: ["launch-week"],
     week: 14,
   }),
-
-  // —— Ops / later ——
   issue(42, {
     title: "Set up simple bookkeeping + inventory log",
     description: "Track units, COGS, and remaining stock weekly.",
@@ -614,132 +599,20 @@ const issues: Issue[] = [
 ];
 
 const budget: BudgetItem[] = [
-  {
-    id: "b1",
-    label: "Hero shampoo, 500 units",
-    owner: "technical",
-    estimate: 1000,
-    actual: 0,
-    notes: "~$2.00 each with custom label",
-    category: "inventory",
-  },
-  {
-    id: "b2",
-    label: "Bath brush, 300 units",
-    owner: "technical",
-    estimate: 390,
-    actual: 0,
-    notes: "~$1.30 each with logo",
-    category: "inventory",
-  },
-  {
-    id: "b3",
-    label: "Import duties",
-    owner: "technical",
-    estimate: 560,
-    actual: 0,
-    notes: "Budget ~40% of product value; confirm HS codes with forwarder",
-    category: "inventory",
-  },
-  {
-    id: "b4",
-    label: "Sea freight, broker, delivery",
-    owner: "technical",
-    estimate: 600,
-    actual: 0,
-    notes: "LCL to West Coast",
-    category: "inventory",
-  },
-  {
-    id: "b5",
-    label: "Samples (4–6 suppliers)",
-    owner: "technical",
-    estimate: 300,
-    actual: 0,
-    notes: "Includes express shipping",
-    category: "inventory",
-  },
-  {
-    id: "b6",
-    label: "Product liability insurance",
-    owner: "technical",
-    estimate: 400,
-    actual: 0,
-    notes: "Yearly",
-    category: "ops",
-  },
-  {
-    id: "b7",
-    label: "LLC and state filings",
-    owner: "technical",
-    estimate: 150,
-    actual: 0,
-    notes: "Varies by state",
-    category: "ops",
-  },
-  {
-    id: "b8",
-    label: "Shopify (3 mo) + domain",
-    owner: "technical",
-    estimate: 130,
-    actual: 0,
-    notes: "Basic plan",
-    category: "ops",
-  },
-  {
-    id: "b9",
-    label: "Shipping supplies",
-    owner: "technical",
-    estimate: 150,
-    actual: 0,
-    notes: "Mailers, boxes, tape, labels",
-    category: "ops",
-  },
-  {
-    id: "b10",
-    label: "Logo / label design help",
-    owner: "social",
-    estimate: 150,
-    actual: 0,
-    notes: "Optional freelancer polish",
-    category: "brand",
-  },
-  {
-    id: "b11",
-    label: "AI image tools (3 months)",
-    owner: "social",
-    estimate: 60,
-    actual: 0,
-    notes: "One paid plan",
-    category: "brand",
-  },
-  {
-    id: "b12",
-    label: "Influencer gifting postage",
-    owner: "social",
-    estimate: 250,
-    actual: 0,
-    notes: "~30 bundles from stock",
-    category: "growth",
-  },
-  {
-    id: "b13",
-    label: "Launch ads",
-    owner: "social",
-    estimate: 500,
-    actual: 0,
-    notes: "Meta + TikTok tests in launch month",
-    category: "growth",
-  },
-  {
-    id: "b14",
-    label: "Reserve",
-    owner: "shared",
-    estimate: 300,
-    actual: 0,
-    notes: "Customs and surprises",
-    category: "reserve",
-  },
+  { id: "b1", label: "Hero shampoo, 500 units", owner: "technical", estimate: 1000, actual: 0, notes: "~$2.00 each with custom label", category: "inventory" },
+  { id: "b2", label: "Bath brush, 300 units", owner: "technical", estimate: 390, actual: 0, notes: "~$1.30 each with logo", category: "inventory" },
+  { id: "b3", label: "Import duties", owner: "technical", estimate: 560, actual: 0, notes: "Budget ~40% of product value; confirm HS codes with forwarder", category: "inventory" },
+  { id: "b4", label: "Sea freight, broker, delivery", owner: "technical", estimate: 600, actual: 0, notes: "LCL to West Coast", category: "inventory" },
+  { id: "b5", label: "Samples (4–6 suppliers)", owner: "technical", estimate: 300, actual: 0, notes: "Includes express shipping", category: "inventory" },
+  { id: "b6", label: "Product liability insurance", owner: "technical", estimate: 400, actual: 0, notes: "Yearly", category: "ops" },
+  { id: "b7", label: "LLC and state filings", owner: "technical", estimate: 150, actual: 0, notes: "Varies by state", category: "ops" },
+  { id: "b8", label: "Shopify (3 mo) + domain", owner: "technical", estimate: 130, actual: 0, notes: "Basic plan", category: "ops" },
+  { id: "b9", label: "Shipping supplies", owner: "technical", estimate: 150, actual: 0, notes: "Mailers, boxes, tape, labels", category: "ops" },
+  { id: "b10", label: "Logo / label design help", owner: "social", estimate: 150, actual: 0, notes: "Optional freelancer polish", category: "brand" },
+  { id: "b11", label: "AI image tools (3 months)", owner: "social", estimate: 60, actual: 0, notes: "One paid plan", category: "brand" },
+  { id: "b12", label: "Influencer gifting postage", owner: "social", estimate: 250, actual: 0, notes: "~30 bundles from stock", category: "growth" },
+  { id: "b13", label: "Launch ads", owner: "social", estimate: 500, actual: 0, notes: "Meta + TikTok tests in launch month", category: "growth" },
+  { id: "b14", label: "Reserve", owner: "shared", estimate: 300, actual: 0, notes: "Customs and surprises", category: "reserve" },
 ];
 
 export const seedData: ProjectData = {
